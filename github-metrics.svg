@@ -287,11 +287,11 @@
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="387.14219207235965" height="8" fill="#f1e05a"/>
-                    <rect mask="url(#languages-bar)" x="387.14219207235965" y="0" width="34.851822293163075" height="8" fill="#2b7489"/>
-                    <rect mask="url(#languages-bar)" x="421.99401436552273" y="0" width="25.08951848895983" height="8" fill="#ff3e00"/>
-                    <rect mask="url(#languages-bar)" x="447.08353285448254" y="0" width="10.126363394519819" height="8" fill="#e34c26"/>
-                    <rect mask="url(#languages-bar)" x="457.2098962490024" y="0" width="2.7901037509976057" height="8" fill="#563d7c"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="387.17051659804855" height="8" fill="#f1e05a"/>
+                    <rect mask="url(#languages-bar)" x="387.17051659804855" y="0" width="34.854372160772606" height="8" fill="#2b7489"/>
+                    <rect mask="url(#languages-bar)" x="422.02488875882113" y="0" width="25.082175471735763" height="8" fill="#ff3e00"/>
+                    <rect mask="url(#languages-bar)" x="447.1070642305569" y="0" width="10.10262788578574" height="8" fill="#e34c26"/>
+                    <rect mask="url(#languages-bar)" x="457.20969211634264" y="0" width="2.7903078836573574" height="8" fill="#563d7c"/>
                 </svg>
                 <div class="field center horizontal-wrap fill-width">
                     <div class="field center no-wrap language">
@@ -514,27 +514,27 @@
                     <div class="chart-bars horizontal">
                         <div class="entry">
                             <span class="name">JavaScript</span>
-                            <div class="bar" style="width: 68.17147243808164%; background-color: var(--color-calendar-graph-day-L4-bg)"></div>
+                            <div class="bar" style="width: 67.93906449231595%; background-color: var(--color-calendar-graph-day-L4-bg)"></div>
                             <span class="value">85%</span>
                         </div>
                         <div class="entry">
                             <span class="name">TypeScript</span>
-                            <div class="bar" style="width: 5.414068497393974%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                            <div class="bar" style="width: 5.395611032816589%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                             <span class="value">7%</span>
                         </div>
                         <div class="entry">
                             <span class="name">Svelte</span>
-                            <div class="bar" style="width: 4.144321288602174%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
-                            <span class="value">5%</span>
+                            <div class="bar" style="width: 4.402925978122274%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                            <span class="value">6%</span>
                         </div>
                         <div class="entry">
                             <span class="name">HTML</span>
-                            <div class="bar" style="width: 1.7788312615318314%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                            <div class="bar" style="width: 1.7727669283940675%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                             <span class="value">2%</span>
                         </div>
                         <div class="entry">
                             <span class="name">CSS</span>
-                            <div class="bar" style="width: 0.4913065143903786%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                            <div class="bar" style="width: 0.4896315683511174%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                             <span class="value">1%</span>
                         </div>
                     </div>
@@ -2546,7 +2546,7 @@
             </section>
             <footer>
                 <span>These metrics include private contributions</span>
-                <span>Last updated 25 Jan 2022, 17:10:40 (timezone Asia/Shanghai) with lowlighter/metrics@3.18.0</span>
+                <span>Last updated 25 Jan 2022, 18:11:31 (timezone Asia/Shanghai) with lowlighter/metrics@3.18.0</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
