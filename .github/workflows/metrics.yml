@@ -1,8 +1,8 @@
 # Visit https://github.com/lowlighter/metrics/blob/master/action.yml for full reference
 name: Metrics
 on:
-  # Schedule updates (each hour)
-  schedule: [{cron: "0 * * * *"}]
+  # Schedule updates (each half day)
+  schedule: [{cron: "0 0,12 * * *"}]
   # Lines below let you run workflow manually and on each commit
   workflow_dispatch:
   push: {branches: ["neko"]}
@@ -32,7 +32,9 @@ jobs:
           plugin_languages_analysis_timeout: 233
           plugin_languages_categories: markup, programming
           plugin_languages_colors: github
-          plugin_languages_limit: 16
+          plugin_languages_details: lines, percentage
+          plugin_languages_ignored: text, rtf, YAML, json, dockerfile, makefile, qmake, ejs
+          plugin_languages_limit: 15
           plugin_languages_recent_categories: markup, programming
           plugin_languages_recent_days: 28
           plugin_languages_recent_load: 365
@@ -52,3 +54,7 @@ jobs:
           # plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
           # plugin_wakatime_url: https://wakatime.com
           # plugin_wakatime_user: current
+          plugin_people: yes
+          plugin_people_types: followers, following
+          plugin_people_limit: 111
+          plugin_people_size: 111
