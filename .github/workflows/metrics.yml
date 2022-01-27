@@ -26,6 +26,7 @@ jobs:
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: Asia/Shanghai
+          repositories_skipped: ${{ secrets.SKIPPED_REPOS }}
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year # half-year
           plugin_languages: yes
