@@ -34,7 +34,7 @@ jobs:
           plugin_languages_categories: markup, programming
           plugin_languages_colors: github
           plugin_languages_details: lines, percentage
-          plugin_languages_ignored: text, rtf, YAML, json, dockerfile, makefile, qmake, ejs
+          plugin_languages_ignored: text, html, rtf, YAML, json, dockerfile, makefile, qmake, ejs
           plugin_languages_limit: 15
           plugin_languages_recent_categories: markup, programming
           plugin_languages_recent_days: 28
