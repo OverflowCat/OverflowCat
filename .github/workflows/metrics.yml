@@ -35,7 +35,7 @@ jobs:
           plugin_languages_colors: github
           plugin_languages_details: lines, percentage
           plugin_languages_ignored: text, html, rtf, YAML, json, dockerfile, makefile, qmake, ejs, Jupyter Notebook
-          plugin_languages_aliases: Svelte:TypeScript
+          # plugin_languages_aliases: Svelte:TypeScript
           plugin_languages_limit: 16
           plugin_languages_recent_categories: markup, programming
           plugin_languages_recent_days: 28
