@@ -34,7 +34,7 @@ jobs:
           plugin_languages_categories: markup, programming
           plugin_languages_colors: github
           plugin_languages_details: lines, percentage
-          plugin_languages_ignored: text, html, rtf, YAML, json, dockerfile, makefile, qmake, ejs, Jupyter Notebook
+          plugin_languages_ignored: Dhall, text, html, rtf, YAML, json, dockerfile, makefile, qmake, ejs, Jupyter Notebook
           # plugin_languages_aliases: Svelte:TypeScript
           plugin_languages_aliases: RenderScript:Rust # temp solution until Rust as RenderScript bug is fixed
           plugin_languages_limit: 16
@@ -50,6 +50,12 @@ jobs:
           plugin_habits: yes
           plugin_habits_facts: yes
           plugin_habits_charts: yes
+          plugin_activity: yes
+          plugin_activity_limit: 5
+          plugin_activity_days: 31
+          plugin_activity_filter: issue, pr, release, fork, review, ref/create
+          plugin_discussions: yes
+          plugin_discussions_categories_limit: 8
           # plugin_wakatime: yes
           # plugin_wakatime_token: ${{ secrets.WAKATIME_SECRET }}
           # plugin_wakatime_days: 14
@@ -58,6 +64,6 @@ jobs:
           # plugin_wakatime_url: https://wakatime.com
           # plugin_wakatime_user: current
           plugin_people: yes
-          plugin_people_types: followers, following
-          plugin_people_limit: 111
-          plugin_people_size: 111
+          plugin_people_types: followers
+          plugin_people_limit: 120
+          plugin_people_size: 80
