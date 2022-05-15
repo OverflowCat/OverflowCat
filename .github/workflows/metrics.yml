@@ -50,10 +50,10 @@ jobs:
           plugin_habits: yes
           plugin_habits_facts: yes
           plugin_habits_charts: yes
-          plugin_activity: yes
-          plugin_activity_limit: 5
-          plugin_activity_days: 31
-          plugin_activity_filter: issue, pr, release, fork, review, ref/create
+          # plugin_activity: yes
+          # plugin_activity_limit: 5
+          # plugin_activity_days: 31
+          # plugin_activity_filter: issue, pr, release, fork, review, ref/create
           plugin_discussions: yes
           plugin_discussions_categories_limit: 8
           # plugin_wakatime: yes
