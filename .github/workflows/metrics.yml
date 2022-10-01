@@ -54,8 +54,8 @@ jobs:
           # plugin_activity_limit: 5
           # plugin_activity_days: 31
           # plugin_activity_filter: issue, pr, release, fork, review, ref/create
-          plugin_discussions: yes
-          plugin_discussions_categories_limit: 8
+          # plugin_discussions: yes
+          # plugin_discussions_categories_limit: 8
           # plugin_wakatime: yes
           # plugin_wakatime_token: ${{ secrets.WAKATIME_SECRET }}
           # plugin_wakatime_days: 14
@@ -67,3 +67,6 @@ jobs:
           plugin_people_types: followers
           plugin_people_limit: 120
           plugin_people_size: 80
+          plugin_code: yes
+          plugin_code_languages: python, rust, go, c, javascript, typescript
+          plugin_code_load: 345
