@@ -70,6 +70,7 @@ jobs:
         with:
           filename: metrics/wakatime.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
           config_timezone: Asia/Shanghai
           plugin_wakatime: yes
           plugin_wakatime_token: ${{ secrets.WAKATIME_SECRET }}
@@ -84,6 +85,7 @@ jobs:
         with:
           filename: metrics/followers.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
           plugin_people: yes
           plugin_people_types: followers
           plugin_people_limit: 90
@@ -91,8 +93,9 @@ jobs:
       - name: 🧑‍💻 leetcode
         uses: lowlighter/metrics@latest
         with:
-          filename: leetcode.svg
+          filename: metrics/leetcode.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
           plugin_leetcode: yes
           plugin_leetcode_sections: solved, skills, recent
       - name: 📶 blogposts
@@ -101,6 +104,7 @@ jobs:
         with:
           filename: metrics/rss.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
           plugin_rss: true
           plugin_rss_source: https://blog.xinshijiededa.men/atom.xml
           plugin_rss_limit: 6
