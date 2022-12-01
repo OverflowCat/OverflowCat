@@ -13,7 +13,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: 🌐 General
+      - name: 🌐 general
         uses: lowlighter/metrics@latest
         with:
           # Your GitHub token
@@ -69,6 +69,7 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           filename: metrics/wakatime.svg
+          token: ${{ secrets.METRICS_TOKEN }}
           config_timezone: Asia/Shanghai
           plugin_wakatime: yes
           plugin_wakatime_token: ${{ secrets.WAKATIME_SECRET }}
@@ -82,6 +83,7 @@ jobs:
         if: ${{ success() || failure() }}
         with:
           filename: metrics/followers.svg
+          token: ${{ secrets.METRICS_TOKEN }}
           plugin_people: yes
           plugin_people_types: followers
           plugin_people_limit: 90
@@ -90,6 +92,7 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           filename: leetcode.svg
+          token: ${{ secrets.METRICS_TOKEN }}
           plugin_leetcode: yes
           plugin_leetcode_sections: solved, skills, recent
       - name: 📶 blogposts
@@ -97,6 +100,7 @@ jobs:
         if: ${{ success() || failure() }}
         with:
           filename: metrics/rss.svg
+          token: ${{ secrets.METRICS_TOKEN }}
           plugin_rss: true
           plugin_rss_source: https://blog.xinshijiededa.men/atom.xml
           plugin_rss_limit: 6
