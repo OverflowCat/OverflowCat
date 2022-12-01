@@ -2,15 +2,16 @@
 name: Metrics
 on:
   # Schedule updates (each half day)
-  schedule: [{cron: "0 0,12 * * *"}]
+  schedule: [{ cron: "0 0,12 * * *" }]
   # Lines below let you run workflow manually and on each commit
   workflow_dispatch:
-  push: {branches: ["neko"]}
+  push: { branches: ["neko"] }
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
     steps:
-      - uses: lowlighter/metrics@latest
+      - name: 🌐 General
+        uses: lowlighter/metrics@latest
         with:
           # Your GitHub token
           # The following scopes are required:
@@ -20,13 +21,13 @@ jobs:
           #  - read:user (for user related data)
           #  - repo      (optional, if you want to include private repositories)
           token: ${{ secrets.METRICS_TOKEN }}
-
+          filename: metrics/general.svg
           # Options
           user: OverflowCat
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: Asia/Shanghai
-          repositories_skipped: ${{ secrets.SKIPPED_REPOS }},OverflowCat/vim-flypy
+          repositories_skipped: ${{ secrets.SKIPPED_REPOS }},OverflowCat/vim-flypy,OverflowCat/lemmy,OverflowCat/lanqiao-14-web
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year # half-year
           plugin_languages: yes
@@ -56,21 +57,43 @@ jobs:
           # plugin_activity_filter: issue, pr, release, fork, review, ref/create
           # plugin_discussions: yes
           # plugin_discussions_categories_limit: 8
-          # plugin_wakatime: yes
-          # plugin_wakatime_token: ${{ secrets.WAKATIME_SECRET }}
-          # plugin_wakatime_days: 14
-          # plugin_wakatime_limit: 5
-          # plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
-          # plugin_wakatime_url: https://wakatime.com
-          # plugin_wakatime_user: current
           plugin_calendar: yes
           plugin_calendar_limit: 0
-          plugin_leetcode: yes
-          plugin_leetcode_sections: solved, skills, recent
+          plugin_code: yes
+          plugin_code_languages: python, rust, go, c, javascript, typescript
+          plugin_code_load: 345
+      - name: ⌛ wakatime
+        uses: lowlighter/metrics
+        with:
+          filename: metrics/wakatime.svg
+          config_timezone: Asia/Shanghai
+          plugin_wakatime: yes
+          plugin_wakatime_token: ${{ secrets.WAKATIME_SECRET }}
+          plugin_wakatime_days: 15
+          plugin_wakatime_limit: 5 # Display limit (entries per graph)
+          plugin_wakatime_sections: time, languages, languages-graphs, editors, os #, projects, projects-graphs
+          plugin_wakatime_url: https://wakatime.com
+          plugin_wakatime_user: current
+      - name: 🤼 followers
+        uses: lowlighter/metrics
+        if: ${{ success() || failure() }}
+        with:
+          filename: metrics/followers.svg
           plugin_people: yes
           plugin_people_types: followers
           plugin_people_limit: 90
           plugin_people_size: 80
-          plugin_code: yes
-          plugin_code_languages: python, rust, go, c, javascript, typescript
-          plugin_code_load: 345
+      - name: 🧑‍💻 leetcode
+        uses: lowlighter/metrics
+        with:
+          filename: leetcode.svg
+          plugin_leetcode: yes
+          plugin_leetcode_sections: solved, skills, recent
+      - name: 📶 blogposts
+        uses: lowlighter/metrics
+        if: ${{ success() || failure() }}
+        with:
+          filename: metrics/rss.svg
+          plugin_rss: true
+          plugin_rss_source: https://blog.xinshijiededa.men/atom.xml
+          plugin_rss_limit: 6
