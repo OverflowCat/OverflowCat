@@ -7,8 +7,11 @@ on:
   workflow_dispatch:
   push: { branches: ["neko"] }
 jobs:
-  github-metrics:
+  job1:
+    name: 📐 Update metrics
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: 🌐 General
         uses: lowlighter/metrics@latest
@@ -63,7 +66,7 @@ jobs:
           plugin_code_languages: python, rust, go, c, javascript, typescript
           plugin_code_load: 345
       - name: ⌛ wakatime
-        uses: lowlighter/metrics
+        uses: lowlighter/metrics@latest
         with:
           filename: metrics/wakatime.svg
           config_timezone: Asia/Shanghai
@@ -75,7 +78,7 @@ jobs:
           plugin_wakatime_url: https://wakatime.com
           plugin_wakatime_user: current
       - name: 🤼 followers
-        uses: lowlighter/metrics
+        uses: lowlighter/metrics@latest
         if: ${{ success() || failure() }}
         with:
           filename: metrics/followers.svg
@@ -84,13 +87,13 @@ jobs:
           plugin_people_limit: 90
           plugin_people_size: 80
       - name: 🧑‍💻 leetcode
-        uses: lowlighter/metrics
+        uses: lowlighter/metrics@latest
         with:
           filename: leetcode.svg
           plugin_leetcode: yes
           plugin_leetcode_sections: solved, skills, recent
       - name: 📶 blogposts
-        uses: lowlighter/metrics
+        uses: lowlighter/metrics@latest
         if: ${{ success() || failure() }}
         with:
           filename: metrics/rss.svg
