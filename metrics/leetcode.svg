@@ -19,8 +19,8 @@
                             <div class="category column">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="50" height="50" class="gauge all">
                                     <circle class="gauge-base" r="53" cx="60" cy="60"/>
-                                    <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="21.889378757515033 329"/>
-                                    <text x="60" y="50" dominant-baseline="central">166</text>
+                                    <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="22.02124248496994 329"/>
+                                    <text x="60" y="50" dominant-baseline="central">167</text>
                                     <text x="60" y="80" dominant-baseline="central" class="secondary">/2495</text>
                                 </svg>
                                 <span class="title">All</span>
@@ -37,8 +37,8 @@
                             <div class="category column">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="50" height="50" class="gauge medium">
                                     <circle class="gauge-base" r="53" cx="60" cy="60"/>
-                                    <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="19.542105263157897 329"/>
-                                    <text x="60" y="50" dominant-baseline="central">79</text>
+                                    <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="19.789473684210524 329"/>
+                                    <text x="60" y="50" dominant-baseline="central">80</text>
                                     <text x="60" y="80" dominant-baseline="central" class="secondary">/1330</text>
                                 </svg>
                                 <span class="title">Medium</span>
@@ -87,8 +87,8 @@
                             <path fill-rule="evenodd" d="M8 5.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM4 8a4 4 0 118 0 4 4 0 01-8 0z"/>
                         </svg>
                         <div class="infos">
-                            <div class="title">Middle of the Linked List</div>
-                            <div class="date">5 Dec 2022</div>
+                            <div class="title">Odd Even Linked List</div>
+                            <div class="date">6 Dec 2022</div>
                         </div>
                     </div>
                     <div class="field">
@@ -96,8 +96,8 @@
                             <path fill-rule="evenodd" d="M8 5.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM4 8a4 4 0 118 0 4 4 0 01-8 0z"/>
                         </svg>
                         <div class="infos">
-                            <div class="title">Minimum Average Difference</div>
-                            <div class="date">4 Dec 2022</div>
+                            <div class="title">Middle of the Linked List</div>
+                            <div class="date">5 Dec 2022</div>
                         </div>
                     </div>
                 </section>
