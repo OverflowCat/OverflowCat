@@ -11,15 +11,13 @@
 ## ⌛ Time
 
 <p align="center">
-	<a href="https://github.com/OverflowCat/OverflowCat">
-		<img src="https://raw.githubusercontent.com/OverflowCat/OverflowCat/neko/metrics/wakatime.svg">
-	</a>
+	<img src="https://raw.githubusercontent.com/OverflowCat/OverflowCat/neko/metrics/wakatime.svg">
 </p>
 
 ## 👋 Followers
 
 <p align="center">
-	<a href="https://github.com/OverflowCat/OverflowCat">
+	<a href="https://github.com/OverflowCat?tab=followers">
 		<img src="https://raw.githubusercontent.com/OverflowCat/OverflowCat/neko/metrics/followers.svg">
 	</a>
 </p>
@@ -28,7 +26,7 @@
 ## 🧑‍💻 LeetCode
 
 <p align="center">
-	<a href="https://github.com/OverflowCat/OverflowCat">
+	<a href="https://github.com/OverflowCat/LeetCode">
 		<img src="https://raw.githubusercontent.com/OverflowCat/OverflowCat/neko/metrics/leetcode.svg">
 	</a>
 </p>
