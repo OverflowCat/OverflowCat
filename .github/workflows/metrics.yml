@@ -34,7 +34,7 @@ jobs:
           plugin_isocalendar_duration: full-year # half-year
           repositories_skipped: ${{ secrets.SKIPPED_REPOS }},OverflowCat/vim-flypy,OverflowCat/lemmy,${{ secrets.LARGE }}
           plugin_languages: yes
-          plugin_languages_indepth: yes
+          plugin_languages_indepth: no
           plugin_languages_sections: recently-used, most-used 
           plugin_languages_recent_categories: markup, programming
           plugin_languages_recent_days: 30
@@ -50,7 +50,7 @@ jobs:
           plugin_languages_aliases: RenderScript:Rust # temp solution until Rust as RenderScript bug is fixed
           plugin_languages_limit: 16
           plugin_languages_threshold: 0%
-          plugin_languages_indepth_custom: E011011101001/Twitter-Block-With-Love, sumimakito/hexo-theme-typography
+          plugin_languages_indepth_custom: E011011101001/Twitter-Block-With-Love
           # plugin_tweets: yes
           # plugin_tweets_token: ${{ secrets.TWITTER_SECRET }}
           # plugin_tweets_limit: 2
@@ -83,17 +83,6 @@ jobs:
           plugin_wakatime_sections: time, languages, languages-graphs, editors, os #, projects, projects-graphs
           plugin_wakatime_url: https://wakatime.com
           plugin_wakatime_user: current
-      - name: 🤼 followers
-        uses: lowlighter/metrics@latest
-        if: ${{ success() || failure() }}
-        with:
-          filename: metrics/followers.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_people: yes
-          plugin_people_types: followers
-          plugin_people_limit: 90
-          plugin_people_size: 80
       - name: 📶 blogposts
         uses: lowlighter/metrics@latest
         if: ${{ success() || failure() }}
@@ -109,6 +98,17 @@ jobs:
         with:
           filename: metrics/leetcode.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          base: "metadata"
+          base: ""
           plugin_leetcode: yes
           plugin_leetcode_sections: solved, skills, recent
+      - name: 🤼 followers
+        uses: lowlighter/metrics@latest
+        if: ${{ success() || failure() }}
+        with:
+          filename: metrics/followers.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: "metadata"
+          plugin_people: yes
+          plugin_people_types: followers
+          plugin_people_limit: 90
+          plugin_people_size: 80
