@@ -19,8 +19,8 @@
                             <div class="category column">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="50" height="50" class="gauge all">
                                     <circle class="gauge-base" r="53" cx="60" cy="60"/>
-                                    <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="25.597551342812007 329"/>
-                                    <text x="60" y="50" dominant-baseline="central">197</text>
+                                    <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="25.72748815165877 329"/>
+                                    <text x="60" y="50" dominant-baseline="central">198</text>
                                     <text x="60" y="80" dominant-baseline="central" class="secondary">/2532</text>
                                 </svg>
                                 <span class="title">All</span>
@@ -37,8 +37,8 @@
                             <div class="category column">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="50" height="50" class="gauge medium">
                                     <circle class="gauge-base" r="53" cx="60" cy="60"/>
-                                    <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="23.91839762611276 329"/>
-                                    <text x="60" y="50" dominant-baseline="central">98</text>
+                                    <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="24.162462908011868 329"/>
+                                    <text x="60" y="50" dominant-baseline="central">99</text>
                                     <text x="60" y="80" dominant-baseline="central" class="secondary">/1348</text>
                                 </svg>
                                 <span class="title">Medium</span>
@@ -65,10 +65,10 @@
                     <div class="topics">
                         <div class="label fundamental"><span class="dot">⬤</span> Array <span class="count">x85</span></div>
                         <div class="label fundamental"><span class="dot">⬤</span> String <span class="count">x48</span></div>
-                        <div class="label intermediate"><span class="dot">⬤</span> Hash Table <span class="count">x37</span></div>
-                        <div class="label intermediate"><span class="dot">⬤</span> Depth-First Search <span class="count">x34</span></div>
+                        <div class="label intermediate"><span class="dot">⬤</span> Hash Table <span class="count">x38</span></div>
+                        <div class="label intermediate"><span class="dot">⬤</span> Depth-First Search <span class="count">x35</span></div>
                         <div class="label advanced"><span class="dot">⬤</span> Dynamic Programming <span class="count">x30</span></div>
-                        <div class="label intermediate"><span class="dot">⬤</span> Tree <span class="count">x27</span></div>
+                        <div class="label intermediate"><span class="dot">⬤</span> Tree <span class="count">x28</span></div>
                         <div class="label intermediate"><span class="dot">⬤</span> Math <span class="count">x27</span></div>
                         <div class="label fundamental"><span class="dot">⬤</span> Sorting <span class="count">x27</span></div>
                         <div class="label intermediate"><span class="dot">⬤</span> Binary Tree <span class="count">x25</span></div>
@@ -87,8 +87,8 @@
                             <path fill-rule="evenodd" d="M8 5.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM4 8a4 4 0 118 0 4 4 0 01-8 0z"/>
                         </svg>
                         <div class="infos">
-                            <div class="title">Binary Tree Preorder Traversal</div>
-                            <div class="date">9 Jan 2023</div>
+                            <div class="title">Minimum Time to Collect All Apples in a Tree</div>
+                            <div class="date">11 Jan 2023</div>
                         </div>
                     </div>
                     <div class="field">
@@ -96,8 +96,8 @@
                             <path fill-rule="evenodd" d="M8 5.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM4 8a4 4 0 118 0 4 4 0 01-8 0z"/>
                         </svg>
                         <div class="infos">
-                            <div class="title">Max Points on a Line</div>
-                            <div class="date">8 Jan 2023</div>
+                            <div class="title">Same Tree</div>
+                            <div class="date">10 Jan 2023</div>
                         </div>
                     </div>
                 </section>
