@@ -34,8 +34,8 @@ jobs:
           plugin_isocalendar_duration: full-year # half-year
           repositories_skipped: ${{ secrets.SKIPPED_REPOS }},OverflowCat/vim-flypy,OverflowCat/lemmy,${{ secrets.LARGE }}
           plugin_languages: yes
-          plugin_languages_indepth: no
-          plugin_languages_sections: recently-used, most-used 
+          plugin_languages_indepth: yes
+          plugin_languages_sections: recently-used, most-used
           plugin_languages_recent_categories: markup, programming
           plugin_languages_recent_days: 30
           plugin_languages_recent_load: 888
@@ -110,5 +110,5 @@ jobs:
           base: "metadata"
           plugin_people: yes
           plugin_people_types: followers
-          plugin_people_limit: 90
+          plugin_people_limit: 60
           plugin_people_size: 80
