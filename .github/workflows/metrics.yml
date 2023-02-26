@@ -32,7 +32,7 @@ jobs:
           config_timezone: Asia/Shanghai
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year # half-year
-          repositories_skipped: ${{ secrets.SKIPPED_REPOS }},OverflowCat/vim-flypy,OverflowCat/lemmy,${{ secrets.LARGE }}
+          repositories_skipped: ${{ secrets.SKIPPED_REPOS }},OverflowCat/vim-flypy,OverflowCat/lemmy #,${{ secrets.LARGE }}
           plugin_languages: yes
           plugin_languages_indepth: yes
           plugin_languages_sections: recently-used, most-used
@@ -44,7 +44,7 @@ jobs:
           plugin_languages_categories: markup, programming
           plugin_languages_colors: github
           plugin_languages_details: lines, percentage
-          plugin_languages_ignored: Dhall, text, html, rtf, YAML, json, dockerfile, makefile, qmake, ejs, Jupyter Notebook
+          plugin_languages_ignored: Dhall, css, text, html, rtf, YAML, json, dockerfile, makefile, qmake, ejs, Jupyter Notebook
           plugin_languages_other: false
           # plugin_languages_aliases: Svelte:TypeScript
           plugin_languages_aliases: RenderScript:Rust # temp solution until Rust as RenderScript bug is fixed
