@@ -44,7 +44,7 @@ jobs:
           plugin_languages_categories: markup, programming
           plugin_languages_colors: github
           plugin_languages_details: lines, percentage
-          plugin_languages_ignored: Dhall, css, text, html, rtf, YAML, json, dockerfile, makefile, qmake, ejs, Jupyter Notebook
+          plugin_languages_ignored: pdf, epub, mobi, zip, rar, 7z, Dhall, css, text, html, rtf, YAML, json, dockerfile, makefile, qmake, ejs, Jupyter Notebook
           plugin_languages_other: false
           # plugin_languages_aliases: Svelte:TypeScript
           plugin_languages_aliases: RenderScript:Rust # temp solution until Rust as RenderScript bug is fixed
@@ -69,6 +69,8 @@ jobs:
           plugin_code: yes
           plugin_code_languages: haskell, python, rust, go, c, javascript, typescript
           plugin_code_load: 345
+          plugin_followup: yes
+          plugin_followup_indepth: yes
       - name: ⌛ wakatime
         uses: lowlighter/metrics@latest
         with:
