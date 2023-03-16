@@ -1,4 +1,4 @@
-# ᡥᠠᡳᡤᡳᠶᠠ ᡥᠠᠯᠠ·ᠨᡝᡴᠣ 猫
+![banner](https://user-images.githubusercontent.com/20166026/225646059-f22b50da-065b-4a7a-a6d0-f16f0f92da57.jpg)
 
 ## 📦 Repos
 
