@@ -67,8 +67,10 @@ jobs:
           plugin_calendar: yes
           plugin_calendar_limit: 0
           plugin_code: yes
-          plugin_code_languages: haskell, python, rust, go, c, javascript, typescript
-          plugin_code_load: 345
+          # plugin_code_languages: haskell, python, rust, go, c, javascript, typescript
+          plugin_code_load: 5
+          plugin_code_lines: 89
+          plugin_code_days: 2
           plugin_followup: yes
           plugin_followup_indepth: yes
       - name: ⌛ wakatime
