@@ -73,6 +73,9 @@ jobs:
           plugin_code_days: 2
           plugin_followup: yes
           plugin_followup_indepth: yes
+          plugin_stargazers: yes
+          plugin_stargazers_days: 404
+          plugin_stargazers_charts_type: graph
       - name: ⌛ wakatime
         uses: lowlighter/metrics@latest
         with:
@@ -114,5 +117,5 @@ jobs:
           base: "metadata"
           plugin_people: yes
           plugin_people_types: followers
-          plugin_people_limit: 60
+          plugin_people_limit: 48
           plugin_people_size: 80
