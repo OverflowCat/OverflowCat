@@ -37,10 +37,10 @@ jobs:
           plugin_languages_indepth: yes
           plugin_languages_sections: recently-used, most-used
           plugin_languages_recent_categories: markup, programming
-          plugin_languages_recent_days: 30
+          plugin_languages_recent_days: 32
           plugin_languages_recent_load: 888
-          plugin_languages_analysis_timeout: 30
-          plugin_languages_analysis_timeout_repositories: 9
+          plugin_languages_analysis_timeout: 350
+          plugin_languages_analysis_timeout_repositories: 28
           plugin_languages_categories: markup, programming
           plugin_languages_colors: github
           plugin_languages_details: lines, percentage
@@ -82,8 +82,8 @@ jobs:
           config_timezone: Asia/Shanghai
           plugin_wakatime: yes
           plugin_wakatime_token: ${{ secrets.WAKATIME_SECRET }}
-          plugin_wakatime_days: 15
-          plugin_wakatime_limit: 5 # Display limit (entries per graph)
+          plugin_wakatime_days: 17
+          plugin_wakatime_limit: 8 # Display limit (entries per graph)
           plugin_wakatime_sections: time, languages, languages-graphs, editors, os #, projects, projects-graphs
           plugin_wakatime_url: https://wakatime.com
           plugin_wakatime_user: current
