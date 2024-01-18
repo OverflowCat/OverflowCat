@@ -1,4 +1,6 @@
-![banner](https://user-images.githubusercontent.com/20166026/225646059-f22b50da-065b-4a7a-a6d0-f16f0f92da57.jpg)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/20166026/225646059-f22b50da-065b-4a7a-a6d0-f16f0f92da57.jpg" alt="banner" width="512px">
+</p>
 
 ## 📦 Repos
 
@@ -32,7 +34,7 @@
 	</a>
 </p>
 
-## 👋 Followers
+## 👋 Social
 
 <p align="center">
 	<a href="https://github.com/OverflowCat?tab=followers">
