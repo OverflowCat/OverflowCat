@@ -105,7 +105,7 @@ jobs:
           base: ""
           plugin_leetcode: yes
           plugin_leetcode_sections: solved, skills, recent
-      - name: 🤼 followers
+      - name: 🤼 social
         uses: lowlighter/metrics@latest
         if: ${{ success() || failure() }}
         with:
@@ -116,3 +116,6 @@ jobs:
           plugin_people_types: followers
           plugin_people_limit: 48
           plugin_people_size: 80
+          plugin_sponsorships: yes
+          plugin_sponsorships_sections: sponsorships
+          plugin_sponsorships_size: 36          
