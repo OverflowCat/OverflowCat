@@ -82,7 +82,7 @@ jobs:
           config_timezone: Asia/Shanghai
           plugin_wakatime: yes
           plugin_wakatime_token: ${{ secrets.WAKATIME_SECRET }}
-          plugin_wakatime_days: 17
+          plugin_wakatime_days: 15
           plugin_wakatime_limit: 8 # Display limit (entries per graph)
           plugin_wakatime_sections: time, languages, languages-graphs, editors, os #, projects, projects-graphs
           plugin_wakatime_url: https://wakatime.com
@@ -118,4 +118,4 @@ jobs:
           plugin_people_size: 80
           plugin_sponsorships: yes
           plugin_sponsorships_sections: sponsorships
-          plugin_sponsorships_size: 36          
+          plugin_sponsorships_size: 36
