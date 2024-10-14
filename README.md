@@ -8,6 +8,9 @@
 
 ## ⌛ Time
 
+<p align="center"><img src="https://wakatime.com/share/@overflowcat/70a55e7b-f427-4653-aaf1-126644e36851.svg" width="640px"></p>
+<p align="center"><img src="https://wakatime.com/share/@overflowcat/eaa576de-fcce-46bb-9c75-cd858aabe247.svg" width="640px"></p>
+
 <p align="center">
 	<img src="https://raw.githubusercontent.com/OverflowCat/OverflowCat/neko/metrics/wakatime.svg">
 </p>
